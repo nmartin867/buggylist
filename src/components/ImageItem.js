@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ImageItem = (url, title) => {
-    return <img src={url} alt={title}/>
+const ImageItem = ({url, title}) => {
+    return <iframe src={url}></iframe>
 }
 
 ImageItem.propTypes = {

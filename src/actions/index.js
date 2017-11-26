@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiUrl = 'api.giphy.com/v1/gifs/search?q=boobs&api_key=uFvC2O5HaQfaX5kSGjqWF4GU0Joa7g9H&rating=nsfw'
+const apiUrl = 'http://api.giphy.com/v1/gifs/search?q=boobs&api_key=uFvC2O5HaQfaX5kSGjqWF4GU0Joa7g9H&rating=nsfw'
 
 export const FETCH_IMAGE_LOADING = 'FETCH_IMAGE_LOADING'
 export const FETCH_IMAGE_SUCCESS = 'FETCH_IMAGE_SUCCESS'

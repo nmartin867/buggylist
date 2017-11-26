@@ -10,9 +10,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onLoadClick: () => {
-            dispatch(fetchImages)
-        }
+        onLoadClick: () => dispatch(fetchImages())
     }
 }
 
