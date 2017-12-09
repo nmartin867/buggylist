@@ -5,5 +5,3 @@
    args: ['run', 'build']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['-m', 'cp', '-r', 'build/*', 'gs://www.buggylist.com/']
- - name: 'gcr.io/cloud-builders/gsutil'
-   args: ['iam', 'ch', 'allUsers:objectViewer', 'gs://www.buggylist.com/']
