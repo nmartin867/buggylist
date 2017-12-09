@@ -1,0 +1,9 @@
+  steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/buggy-image', '.' ]
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'build/*', 'gs://www.buggylist.com/']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['iam', 'ch', 'allUsers:objectViewer', 'gs://www.buggylist.com/']
+  images:
+  - 'gcr.io/$PROJECT_ID/buggy-image'
